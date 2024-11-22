@@ -1,0 +1,47 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+#hero {
+    background: url('../assets/images/hero-banner.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+/* Flexbox to make all cards equal height */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures all cards are equal height */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    
+    /* flex-grow: 1; Allows content to grow and push button to bottom */
+}
+
+.card-body h5 {
+    flex-grow: 1; /* Ensures that the title takes up space if needed */
+}
+
+/* Cart Summary */
+#cart-summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
